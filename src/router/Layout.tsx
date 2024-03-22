@@ -1,9 +1,11 @@
 import { Outlet } from 'react-router-dom';
+import { Navbar } from '../components/common/Navbar/Navbar';
 
 const Layout = () => {
   return (
-    <main className='bg-slate-200'>
-      <section className='min-h-screen bg-white w-[400px] mx-auto'>
+    <main className="bg-slate-200 flex flex-col items-center">
+      <Navbar />
+      <section className="min-h-screen bg-white w-[400px] mx-auto overflow-auto scrollbar-hidden">
         <Outlet />
       </section>
     </main>
