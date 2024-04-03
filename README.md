@@ -1,5 +1,5 @@
-# Farm Easy front-end
-경기대학교 심화캡스톤 KGUardians 프로젝트 팜이지🌱
+# FarmPal front-end
+경기대학교 심화캡스톤 KGUardians 프로젝트 FarmPal 프론트엔드🌱
 
 ## spec 💻
 - <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/>
