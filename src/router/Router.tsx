@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './Layout';
-import MainPage from '../pages/Mainpage/Mainpage.tsx';
+import MainPage from '../pages/Mainpage/Mainpage';
 
 const Router = () => (
   <RouterProvider
