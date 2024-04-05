@@ -6,7 +6,7 @@ interface CardProps extends PropsWithChildren {
 
 export const Card = ({ children, className }: CardProps) => {
   return (
-    <div className={`w-full grid p-4 border shadow-sm rounded-xl ${className}`}>
+    <div className={`w-full grid border shadow-sm rounded-xl ${className}`}>
       {children}
     </div>
   );
