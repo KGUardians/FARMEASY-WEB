@@ -2,6 +2,7 @@ import banana from '../../public/image/banana.png';
 import lettuce from '../../public/image/lettuce.png';
 import strawberry from '../../public/image/strawberry.png';
 import sweetPotato from '../../public/image/sweetpotato.png';
+import strawberryIcon from '/strawberry.svg';
 
 export const communityData = [
   { id: 1, text: '딸기 수익성 관련 질문', like: 4 },
@@ -61,4 +62,17 @@ export const marketData = [
     farmName: '민석농장',
     place: '경기도 화성시 반월동',
   },
+];
+
+export const cropData = [
+  { id: 1, title: '딸기', icons: strawberryIcon },
+  { id: 2, title: '사과', icons: strawberryIcon },
+  { id: 3, title: '배', icons: strawberryIcon },
+  { id: 4, title: '오이', icons: strawberryIcon },
+  { id: 5, title: '토마토', icons: strawberryIcon },
+  { id: 6, title: '감자', icons: strawberryIcon },
+  { id: 7, title: '고구마', icons: strawberryIcon },
+  { id: 8, title: '수박', icons: strawberryIcon },
+  { id: 9, title: '참외', icons: strawberryIcon },
+  { id: 10, title: '벼', icons: strawberryIcon },
 ];
