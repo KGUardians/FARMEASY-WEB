@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './Layout';
 import MainPage from '../pages/Mainpage/MainPage';
-import DeterminePage from '../pages/Determinepage/determinepage';
+import DeterminePage from '../pages/Determinepage/DeterminePage';
 
 const Router = () => (
   <RouterProvider
