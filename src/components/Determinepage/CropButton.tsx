@@ -16,8 +16,8 @@ export const CropButton = ({
   <div key={item.id} className="grid mb-8 place-items-center">
     <button
       onClick={() => handleItemClick(item.id)}
-      className={`flex rounded-full items-center justify-center w-[52px] h-[52px] bg-neutral-100 hover:outline hover:outline-[#C0C0C0] ${
-        selectedCrop === item.id ? 'outline outline-[#C0C0C0]' : ''
+      className={`flex rounded-full items-center justify-center w-[52px] h-[52px] bg-neutral-100 hover:outline hover:outline-fp-green ${
+        selectedCrop === item.id ? 'outline outline-fp-green' : ''
       }`}
     >
       <img src={item.icons} alt={item.title} className="w-10" />
