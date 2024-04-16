@@ -31,7 +31,7 @@ const SelectCard = ({ openModal }: SelectCardProps) => {
   return (
     <>
       <Link to="/determine" className="grid justify-items-center">
-        <div className="ml-2 justify-self-start">
+        <div className="justify-self-start">
           <p className="font-semibold">내 작물 병충해 판별</p>
         </div>
         <div className="grid w-full grid-cols-5 my-4">
@@ -44,7 +44,7 @@ const SelectCard = ({ openModal }: SelectCardProps) => {
             />
           ))}
         </div>
-        <div className="flex items-center place-content-end justify-center w-[68px] h-[68px] rounded-full bg-[#ACCB7A] fixed top-[692px]">
+        <div className="flex items-center place-content-end justify-center w-[68px] h-[68px] rounded-full bg-[#ACCB7A] fixed top-[85%]">
           <button
             className="bg-transparent focus:outline-none"
             onClick={handleCameraClick}
