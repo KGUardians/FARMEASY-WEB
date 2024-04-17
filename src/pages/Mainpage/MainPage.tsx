@@ -8,11 +8,7 @@ const MainPage = () => {
   return (
     <section>
       <Link to="/determine">
-        <img
-          src={determineImage}
-          alt="event"
-          className="object-cover w-[400px] h-[240px]"
-        />
+        <img src={determineImage} alt="event" className="object-fill" />
       </Link>
 
       <div className="flex flex-col px-4 mt-4">
