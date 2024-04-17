@@ -44,9 +44,10 @@ const SelectCard = ({ openModal }: SelectCardProps) => {
             />
           ))}
         </div>
-        <div className="flex items-center place-content-end justify-center w-[68px] h-[68px] rounded-full bg-[#ACCB7A] fixed top-[85%]">
+
+        <div className="w-full flex items-center justify-center fixed top-[85%]">
           <button
-            className="bg-transparent focus:outline-none"
+            className="flex items-center justify-center w-[68px] h-[68px] rounded-full bg-[#ACCB7A]"
             onClick={handleCameraClick}
           >
             <FiCamera className="w-[38px] h-[33px] text-white" />
