@@ -1,6 +1,7 @@
 import { IoSearchOutline, IoCloseOutline } from 'react-icons/io5';
 import { MenuList } from '../../../constants/MenuList';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 interface SideMenuProps {
   open: boolean;
@@ -8,9 +9,21 @@ interface SideMenuProps {
 }
 
 export const SideMenu = ({ open, setOpen }: SideMenuProps) => {
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [open]);
+
   return (
     <div
-      className={`absolute inset-0 flex h-screen z-5 ${
+      className={`absolute inset-0 flex h-screen z-5 overflow-y-hidden ${
         open ? '-translate-x-0' : 'translate-x-full'
       }`}
     >
