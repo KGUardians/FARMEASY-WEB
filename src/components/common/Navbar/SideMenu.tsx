@@ -43,7 +43,7 @@ export const SideMenu = ({ open, setOpen }: SideMenuProps) => {
 
         <div className="grid px-2 mt-10 font-semibold text-right gap-7">
           {MenuList.map((item) => (
-            <Link key={item.id} to={item.to}>
+            <Link key={item.id} to={item.to} onClick={() => setOpen(false)}>
               {item.name}
             </Link>
           ))}
