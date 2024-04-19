@@ -16,7 +16,7 @@ export const Navbar = () => {
         className="cursor-pointer w-28 h-14"
         onClick={() => navigate('/')}
       />
-      <div className="flex items-center gap-2 mt-3">
+      <div className="flex items-center gap-2">
         <button className="text-sm" onClick={() => navigate('/')}>
           로그인
         </button>
