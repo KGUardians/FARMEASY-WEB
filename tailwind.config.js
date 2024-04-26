@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         'fp-green': '#accb7a',
+        'fp-darkgreen': '#418E26',
       },
     },
   },
