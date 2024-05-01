@@ -26,7 +26,7 @@ export const CropButton = ({ item }: CropButtonProps) => {
       <button
         onClick={onItemClick}
         className={`flex rounded-[15px] items-center justify-center w-[52px] h-[52px] bg-neutral-100 hover:outline hover:outline-fp-green ${
-          selectedCrop === item.id ? 'outline outline-2 outline-[#9FC031]' : ''
+          selectedCrop === item.id ? 'outline outline-2 outline-fp-green' : ''
         }`}
       >
         <img src={item.icons} alt={item.title} />
