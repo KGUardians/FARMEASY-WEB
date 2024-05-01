@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'fp-green': '#accb7a',
+        'fp-green': '#9FC031',
       },
     },
   },
