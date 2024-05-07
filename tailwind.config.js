@@ -1,7 +1,9 @@
 import tailwindScrollbarHide from 'tailwind-scrollbar-hide';
 
+const withMT = require('@material-tailwind/react/utils/withMT');
+
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = withMT({
   content: ['index.html', './src/**/*.{html,js,jsx,ts,tsx,css}'],
   theme: {
     extend: {
@@ -12,4 +14,4 @@ export default {
     },
   },
   plugins: [tailwindScrollbarHide],
-};
+});
