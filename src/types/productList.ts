@@ -1,6 +1,6 @@
 export interface ProductInfo {
   id: number;
-  url: string;
+  url: string[];
   like?: boolean;
   liked: number;
   type: string;

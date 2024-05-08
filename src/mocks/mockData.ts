@@ -1,6 +1,9 @@
 import banana from '../../public/image/banana.png';
 import lettuce from '../../public/image/lettuce.png';
-import strawberry from '../../public/image/strawberry.png';
+import strawberry1 from '../../public/image/strawberry.png';
+import strawberry2 from '../../public/image/strawberryDetail1.png';
+import strawberry3 from '../../public/image/strawberryDetail2.png';
+import strawberry4 from '../../public/image/strawberryDetail3.png';
 import sweetPotato from '../../public/image/sweetpotato.png';
 import strawberryIcon from '../../public/cropIcon/strawberry.svg';
 import carrotIcon from '../../public/cropIcon/carrot.svg'
@@ -24,7 +27,7 @@ export const communityData = [
 export const marketData = [
   {
     id: 3,
-    url: strawberry,
+    url: [strawberry1, strawberry2, strawberry3, strawberry4],
     like: false,
     liked: 220,
     type: '딸기',
@@ -35,7 +38,7 @@ export const marketData = [
   },
   {
     id: 1,
-    url: banana,
+    url: [banana],
     like: false,
     liked: 167,
     type: '바나나',
@@ -46,7 +49,7 @@ export const marketData = [
   },
   {
     id: 2,
-    url: lettuce,
+    url: [lettuce],
     like: true,
     liked: 150,
     type: '상추',
@@ -57,7 +60,7 @@ export const marketData = [
   },
   {
     id: 4,
-    url: sweetPotato,
+    url: [sweetPotato],
     like: false,
     type: '고구마',
     liked: 97,
@@ -68,7 +71,7 @@ export const marketData = [
   },
   {
     id: 5,
-    url: banana,
+    url: [banana],
     type: '바나나',
     price: 12400,
     like: true,
