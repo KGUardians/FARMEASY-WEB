@@ -4,10 +4,12 @@ import { Navbar } from '../components/common/Navbar/Navbar';
 const Layout = () => {
   const location = useLocation();
 
-  const hideNavbar = location.pathname === '/determine/result';
+  const hideNavbar =
+    location.pathname === '/determine/result' ||
+    location.pathname.startsWith('/market/');
 
   return (
-    <main className="flex flex-col items-center bg-slate-200">
+    <main className="flex flex-col items-center bg-[#E2E8F0]">
       <section className="min-h-screen bg-white w-[100vw] max-w-[440px] mx-auto overflow-y-auto overflow-x-hidden scrollbar-hidden">
         {!hideNavbar && <Navbar />}
         <Outlet />

@@ -3,7 +3,8 @@ import cartIcon from '../../../public/cartIcon.svg';
 import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
-  url: string;
+  id: number;
+  url: string[];
   like?: boolean;
   liked: number;
   type: string;
@@ -14,6 +15,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({
+  id,
   url,
   like,
   liked,
@@ -25,11 +27,11 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <Link
-      to=""
+      to={`/market/${id}`}
       className="flex items-center bg-neutral-100 p-4 mb-1.5 rounded-[10px] h-[124px]"
     >
       <img
-        src={url}
+        src={url[0]}
         alt="productImage"
         className="w-[100px] h-[100px] border rounded-[10px] mr-4"
       />

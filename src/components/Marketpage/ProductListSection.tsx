@@ -10,6 +10,7 @@ const ProductListSection = ({ productList }: ProductListProps) => {
     <div className="justify-items-center mt-[-16px] px-2">
       {productList.map((item) => (
         <ProductCard
+          id={item.id}
           key={item.id}
           url={item.url}
           like={item.like}
