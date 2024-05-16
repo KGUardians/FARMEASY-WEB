@@ -2,13 +2,16 @@ import SelectCard from '../../components/Determinepage/SelectCard';
 import selectCropImage from '../../../public/image/selelctCrop.png';
 import UploadImage from '../../components/Determinepage/UploadImage';
 import useCropStore from '../../store/cropStore';
+import { Navbar } from '../../components/common/Navbar/Navbar';
 
 const DeterminePage = () => {
   const selectedCrop = useCropStore((state) => state.selectedCrop);
 
   return (
-    <>
-      <section className="grid px-6 pt-5 pb-5">
+    <section>
+      <Navbar />
+
+      <div className="px-5 mt-8">
         <SelectCard />
 
         {selectedCrop ? (
@@ -16,8 +19,8 @@ const DeterminePage = () => {
         ) : (
           <img src={selectCropImage} alt="selectCrop" />
         )}
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
