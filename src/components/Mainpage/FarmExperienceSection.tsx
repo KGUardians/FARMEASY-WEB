@@ -6,7 +6,7 @@ import { TitleBar } from '../common/TitleBar/TitleBar';
 export const FarmExperienceSection = () => {
   return (
     <div className="mt-10">
-      <TitleBar title="농촌 체험" to="/" />
+      <TitleBar title="농촌 체험" to="/experiencelist" />
 
       <div className="flex w-full gap-2 overflow-x-auto scrollbar-hide">
         {marketData.map((item) => (
