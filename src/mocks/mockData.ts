@@ -1,17 +1,17 @@
-import banana from '../../public/image/banana.png';
-import lettuce from '../../public/image/lettuce.png';
-import strawberry from '../../public/image/strawberry.png';
-import sweetPotato from '../../public/image/sweetpotato.png';
-import strawberryIcon from '../../public/cropIcon/strawberry.svg';
-import carrotIcon from '../../public/cropIcon/carrot.svg'
-import grapeIcon from '../../public/cropIcon/grape.svg'
-import appleIcon from '../../public/cropIcon/apple.svg'
-import orangeIcon from '../../public/cropIcon/orange.svg'
-import lettuceIcon from '../../public/cropIcon/lettuce.svg'
-import potatoIcon from '../../public/cropIcon/potato.svg'
-import tomatoIcon from '../../public/cropIcon/tomato.svg'
-import eggplantIcon from '../../public/cropIcon/eggplant.svg'
-import cucumberIcon from '../../public/cropIcon/cucumber.svg'
+import banana from '/image/banana.png';
+import lettuce from '/image/lettuce.png';
+import strawberry from '/image/strawberry.png';
+import sweetPotato from '/image/sweetpotato.png';
+import strawberryIcon from '/cropIcon/strawberry.svg';
+import carrotIcon from '/cropIcon/carrot.svg';
+import grapeIcon from '/cropIcon/grape.svg';
+import appleIcon from '/cropIcon/apple.svg';
+import orangeIcon from '/cropIcon/orange.svg';
+import lettuceIcon from '/cropIcon/lettuce.svg';
+import potatoIcon from '/cropIcon/potato.svg';
+import tomatoIcon from '/cropIcon/tomato.svg';
+import eggplantIcon from '/cropIcon/eggplant.svg';
+import cucumberIcon from '/cropIcon/cucumber.svg';
 
 export const communityData = [
   { id: 1, text: '딸기 수익성 관련 질문', like: 4 },

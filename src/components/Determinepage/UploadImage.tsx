@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import modifyImage from '../../../public/modifyImage.svg';
-import uploadImage from '../../../public/uploadImage.svg';
-import cancelIcon from '../../../public/cancelIcon.svg';
-import Button from '../common/Button/Button';
+import modifyImage from '/modifyImage.svg';
+import uploadImage from '/uploadImage.svg';
+import cancelIcon from '/cancelIcon.svg';
 import { useNavigate } from 'react-router-dom';
+import Button from '@components/common/Button/Button';
 
 const UploadImage = () => {
   const [selectedImage, setSelectedImage] = useState<File | null>(null);

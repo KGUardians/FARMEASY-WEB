@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../../../../public/fullLogo.svg';
+import logo from '/fullLogo.svg';
 import { IoMenuOutline } from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
 import { SideMenu } from './SideMenu';

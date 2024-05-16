@@ -1,5 +1,5 @@
+import useCropStore from '@store/cropStore';
 import { MouseEvent } from 'react';
-import useCropStore from '../../store/cropStore';
 
 interface CropButtonProps {
   item: {

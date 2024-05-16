@@ -1,10 +1,10 @@
-import shovelIcon from '../../../public/shovel.svg';
-import { experienceData } from '../../mocks/mockData';
-import LocationFilter from '../../components/Experiencepage/LocationFilter';
-import FarmListSection from '../../components/Experiencepage/FarmListSection';
+import shovelIcon from '/shovel.svg';
 import { useState } from 'react';
-import { LocationFilterValue } from '../../types/location';
-import { Navbar } from '../../components/common/Navbar/Navbar';
+import { experienceData } from '@mocks/mockData';
+import LocationFilter from '@components/Experiencepage/LocationFilter';
+import FarmListSection from '@components/Experiencepage/FarmListSection';
+import { LocationFilterValue } from '@type/location';
+import { Navbar } from '@components/common/Navbar/Navbar';
 
 const ExperienceListPage = () => {
   const [open, setOpen] = useState<boolean>(false);

@@ -1,4 +1,4 @@
-import Modal from '../common/Modal/Modal';
+import Modal from '@components/common/Modal/Modal';
 
 interface CropSelectModalProps {
   onClose: () => void;

@@ -1,7 +1,7 @@
-import ProductListSection from '../../components/Marketpage/ProductListSection';
-import ProductSelectCard from '../../components/Marketpage/ProductSelectCard';
-import { Navbar } from '../../components/common/Navbar/Navbar';
-import { marketData } from '../../mocks/mockData';
+import ProductListSection from '@components/Marketpage/ProductListSection';
+import ProductSelectCard from '@components/Marketpage/ProductSelectCard';
+import { Navbar } from '@components/common/Navbar/Navbar';
+import { marketData } from '@mocks/mockData';
 
 const MarketPage = () => {
   return (

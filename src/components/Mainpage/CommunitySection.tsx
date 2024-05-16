@@ -1,7 +1,7 @@
-import { communityData } from '../../mocks/mockData';
-import emptyHeartIcon from '../../../public/emptyHeart.svg';
-import Horizon from '../common/Line/Horizon';
-import { TitleBar } from '../common/TitleBar/TitleBar';
+import { communityData } from '@mocks/mockData';
+import emptyHeartIcon from '/emptyHeart.svg';
+import Horizon from '@components/common/Line/Horizon';
+import { TitleBar } from '@components/common/TitleBar/TitleBar';
 
 export const CommunitySection = () => {
   return (

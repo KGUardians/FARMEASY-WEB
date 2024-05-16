@@ -1,9 +1,9 @@
-import { MarketSection } from '../../components/Mainpage/MarketSection';
-import { FarmExperienceSection } from '../../components/Mainpage/FarmExperienceSection';
-import { CommunitySection } from '../../components/Mainpage/CommunitySection';
-import determineImage from '../../../public/image/linktodetermine.png';
+import determineImage from '/image/linktodetermine.png';
 import { Link } from 'react-router-dom';
-import { Navbar } from '../../components/common/Navbar/Navbar';
+import { Navbar } from '@components/common/Navbar/Navbar';
+import { CommunitySection } from '@components/Mainpage/CommunitySection';
+import { FarmExperienceSection } from '@components/Mainpage/FarmExperienceSection';
+import { MarketSection } from '@components/Mainpage/MarketSection';
 
 const MainPage = () => {
   return (

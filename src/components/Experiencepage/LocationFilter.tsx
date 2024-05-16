@@ -1,6 +1,6 @@
 import { IoChevronDownOutline, IoLocationOutline } from 'react-icons/io5';
-import { LocationFilterValue } from '../../types/location';
 import { Dispatch, SetStateAction } from 'react';
+import { LocationFilterValue } from '@type/location';
 
 interface LocationFilterProps extends LocationFilterValue {
   open: boolean;

@@ -1,8 +1,8 @@
-import { marketData } from '../../mocks/mockData';
-import emptyHeartIcon from '../../../public/emptyHeart.svg';
-import filledHeartIcon from '../../../public/filledHeart.svg';
+import emptyHeartIcon from '/emptyHeart.svg';
+import filledHeartIcon from '/filledHeart.svg';
 import { commaizeNumber } from '@toss/utils';
-import { TitleBar } from '../common/TitleBar/TitleBar';
+import { marketData } from '@mocks/mockData';
+import { TitleBar } from '@components/common/TitleBar/TitleBar';
 
 export const MarketSection = () => {
   return (

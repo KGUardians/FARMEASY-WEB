@@ -1,4 +1,4 @@
-import { ExperienceInfo } from '../../types/farmList';
+import { ExperienceInfo } from '@type/farmList';
 import FarmCard from './FarmCard';
 
 interface FarmListProps {

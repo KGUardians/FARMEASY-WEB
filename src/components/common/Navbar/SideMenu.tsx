@@ -1,5 +1,5 @@
 import { IoSearchOutline, IoCloseOutline } from 'react-icons/io5';
-import { MenuList } from '../../../constants/MenuList';
+import { MenuList } from '@constants/MenuList';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 

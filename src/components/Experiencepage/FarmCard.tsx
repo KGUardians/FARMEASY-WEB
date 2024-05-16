@@ -1,5 +1,5 @@
-import emptyHeart from '../../../public/emptyHeart.svg';
-import filledHeart from '../../../public/filledHeart.svg';
+import emptyHeart from '/emptyHeart.svg';
+import filledHeart from '/filledHeart.svg';
 import { Link } from 'react-router-dom';
 
 interface FarmCardProps {
