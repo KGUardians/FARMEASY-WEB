@@ -26,7 +26,7 @@ const ProductCard = ({
   return (
     <Link
       to=""
-      className="flex items-center bg-neutral-100 p-4 mb-1.5 rounded-[10px] h-[124px]"
+      className="flex items-center bg-gray-100 p-4 mb-1.5 rounded-[10px] h-[124px]"
     >
       <img
         src={url}
@@ -50,9 +50,9 @@ const ProductCard = ({
         </div>
       </div>
 
-      <div className="mb-auto ml-16">
+      <button className="mb-auto ml-16">
         <img src={cartIcon} alt="cartIcon" />
-      </div>
+      </button>
     </Link>
   );
 };

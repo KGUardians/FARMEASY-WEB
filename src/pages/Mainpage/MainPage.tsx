@@ -3,10 +3,13 @@ import { FarmExperienceSection } from '../../components/Mainpage/FarmExperienceS
 import { CommunitySection } from '../../components/Mainpage/CommunitySection';
 import determineImage from '../../../public/image/linktodetermine.png';
 import { Link } from 'react-router-dom';
+import { Navbar } from '../../components/common/Navbar/Navbar';
 
 const MainPage = () => {
   return (
     <section>
+      <Navbar />
+
       <Link to="/determine">
         <img src={determineImage} alt="event" className="object-fill" />
       </Link>
