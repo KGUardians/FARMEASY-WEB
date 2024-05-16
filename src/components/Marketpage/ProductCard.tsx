@@ -1,5 +1,5 @@
 import { commaizeNumber } from '@toss/utils';
-import cartIcon from '../../../public/cartIcon.svg';
+import cartIcon from '/cartIcon.svg';
 import { Link } from 'react-router-dom';
 
 interface ProductCardProps {

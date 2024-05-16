@@ -1,7 +1,7 @@
-import { marketData } from '../../mocks/mockData';
-import emptyHeartIcon from '../../../public/emptyHeart.svg';
-import filledHeartIcon from '../../../public/filledHeart.svg';
-import { TitleBar } from '../common/TitleBar/TitleBar';
+import { marketData } from '@mocks/mockData';
+import emptyHeartIcon from '/emptyHeart.svg';
+import filledHeartIcon from '/filledHeart.svg';
+import { TitleBar } from '@components/common/TitleBar/TitleBar';
 
 export const FarmExperienceSection = () => {
   return (

@@ -1,8 +1,8 @@
-import SelectCard from '../../components/Determinepage/SelectCard';
-import selectCropImage from '../../../public/image/selelctCrop.png';
-import UploadImage from '../../components/Determinepage/UploadImage';
-import useCropStore from '../../store/cropStore';
-import { Navbar } from '../../components/common/Navbar/Navbar';
+import selectCropImage from '/image/selelctCrop.png';
+import SelectCard from '@components/Determinepage/SelectCard';
+import UploadImage from '@components/Determinepage/UploadImage';
+import { Navbar } from '@components/common/Navbar/Navbar';
+import useCropStore from '@store/cropStore';
 
 const DeterminePage = () => {
   const selectedCrop = useCropStore((state) => state.selectedCrop);

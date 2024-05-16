@@ -1,8 +1,8 @@
-import Button from '../../components/common/Button/Button';
-import successIcon from '../../../public/successIcon.svg';
-import failIcon from '../../../public/failIcon.svg';
+import successIcon from '/successIcon.svg';
+import failIcon from '/failIcon.svg';
 import { useNavigate } from 'react-router-dom';
-import useCropStore from '../../store/cropStore';
+import Button from '@components/common/Button/Button';
+import useCropStore from '@store/cropStore';
 
 const ResultPage = () => {
   const selectedCrop = useCropStore((state) => state.selectedCrop);

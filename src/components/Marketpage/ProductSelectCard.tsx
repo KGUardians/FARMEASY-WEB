@@ -1,7 +1,7 @@
-import { cropData } from '../../mocks/mockData';
-import { CropButton } from '../Determinepage/CropButton';
-import marketIcon from '../../../public/marketIcon.svg';
-import selectProduct from '../../../public/selectProductFirst.svg';
+import { CropButton } from '@components/Determinepage/CropButton';
+import marketIcon from '/marketIcon.svg';
+import selectProduct from '/selectProductFirst.svg';
+import { cropData } from '@mocks/mockData';
 
 const ProductSelectCard = () => {
   return (
@@ -11,7 +11,7 @@ const ProductSelectCard = () => {
         <p className="mx-1.5 font-semibold">농산물 직거래</p>
         <img src={selectProduct} alt="selectProduct" />
       </div>
-      
+
       <div className="grid w-full grid-cols-5 my-4">
         {cropData.map((item) => (
           <CropButton key={item.id} item={item} />
