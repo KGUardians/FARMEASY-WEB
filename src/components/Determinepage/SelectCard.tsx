@@ -11,7 +11,7 @@ const SelectCard = () => {
     <>
       <div className="flex justify-self-start">
         <img src={searchIcon} alt="searchIcon" />
-        <p className="mx-1.5 font-semibold">내 작물 병충해 판별</p>
+        <p className="mx-1.5 min-w-32 font-semibold">내 작물 병충해 판별</p>
         {selectedCrop ? (
           <></>
         ) : (
