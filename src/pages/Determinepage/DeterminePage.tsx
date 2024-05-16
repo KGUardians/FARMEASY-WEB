@@ -1,23 +1,21 @@
-import { useState } from 'react';
 import SelectCard from '../../components/Determinepage/SelectCard';
-import CropSelectModal from '../../components/Determinepage/CropSelectModal';
+import selectCropImage from '../../../public/image/selelctCrop.png';
+import UploadImage from '../../components/Determinepage/UploadImage';
+import useCropStore from '../../store/cropStore';
 
 const DeterminePage = () => {
-  const [isShowModal, setIsShowModal] = useState<boolean>(false);
-
-  const openModal = () => {
-    setIsShowModal(true);
-  };
-
-  const closeModal = () => {
-    setIsShowModal(false);
-  };
+  const selectedCrop = useCropStore((state) => state.selectedCrop);
 
   return (
     <>
-      <section className="grid gap-5 px-6 pt-5 pb-5">
-        {isShowModal && <CropSelectModal onClose={closeModal} />}
-        <SelectCard openModal={openModal} />
+      <section className="grid px-6 pt-5 pb-5">
+        <SelectCard />
+
+        {selectedCrop ? (
+          <UploadImage />
+        ) : (
+          <img src={selectCropImage} alt="selectCrop" />
+        )}
       </section>
     </>
   );
