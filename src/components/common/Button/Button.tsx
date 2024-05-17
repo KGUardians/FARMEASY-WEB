@@ -14,7 +14,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={classNames(
-          `py-2 mx-1 border rounded-lg text-lg font-semibold`,
+          `py-2 border rounded-lg text-lg font-semibold`,
           buttonColors[color],
           className,
         )}
