@@ -1,1 +1,1 @@
-export type HorizonColorType = 'default' | 'black';
+export type HorizonColorType = 'default' | 'black' | 'darkgray';

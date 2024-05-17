@@ -8,7 +8,7 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
-        'fp-green': '#accb7a',
+        'fp-green': '#9FC031',
         'fp-darkgreen': '#418E26',
       },
     },
