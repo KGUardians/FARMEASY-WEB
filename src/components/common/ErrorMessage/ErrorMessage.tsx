@@ -1,7 +1,7 @@
 import { IoAlertCircleOutline } from 'react-icons/io5';
 
 interface ErrorMessageProps {
-  text: string;
+  text?: string;
 }
 
 const ErrorMessage = ({ text }: ErrorMessageProps) => {
