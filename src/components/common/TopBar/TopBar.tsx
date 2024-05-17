@@ -11,8 +11,8 @@ const TopBar = ({ title, right }: TopBarProps) => {
   return (
     <header className="flex items-center justify-between w-full h-16 px-3">
       <button onClick={() => navigate(-1)} className="flex items-center gap-1">
-        <IoChevronBackOutline />
-        <span className="font-semibold">{title}</span>
+        <IoChevronBackOutline className="size-5" />
+        <span className="text-lg font-semibold">{title}</span>
       </button>
 
       {right}
