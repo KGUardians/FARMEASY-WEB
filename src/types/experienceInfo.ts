@@ -5,7 +5,8 @@ export interface ExperienceInfoType {
   date: string;
   applicationPeriod: string;
   locationInfo: string;
-  time: string;
+  startTime: string;
+  endTime: string;
   capacity: number;
   detail: string;
 }

@@ -51,7 +51,9 @@ const ExperienceDetailSection = ({ data }: ExperienceDetailSectionProps) => {
           </p>
           <p>
             시간:{' '}
-            <span className="font-semibold text-fp-darkgreen">{data.time}</span>
+            <span className="font-semibold text-fp-darkgreen">
+              {data.startTime} ~ {data.endTime}
+            </span>
           </p>
         </div>
       </div>
