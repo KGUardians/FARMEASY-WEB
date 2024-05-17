@@ -1,15 +1,17 @@
 import ExperienceDetailSection from '@components/ExperienceInfopage/ExperienceDetailSection';
+import { CarouselDefault } from '@components/common/Carousel/Carousel';
 import TopBar from '@components/common/TopBar/TopBar';
 import { experienceInfoData } from '@mocks/mockData';
 
 const ExperienceInfoPage = () => {
+  const data = experienceInfoData;
   return (
     <section>
       <TopBar title="농촌체험" />
 
-      <div className="w-full h-[200px] bg-blue-gray-300"></div>
+      <CarouselDefault url={data.url} />
 
-      <ExperienceDetailSection data={experienceInfoData} />
+      <ExperienceDetailSection data={data} />
     </section>
   );
 };

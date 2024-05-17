@@ -15,6 +15,7 @@ import potatoIcon from '/cropIcon/potato.svg';
 import tomatoIcon from '/cropIcon/tomato.svg';
 import eggplantIcon from '/cropIcon/eggplant.svg';
 import cucumberIcon from '/cropIcon/cucumber.svg';
+import experienceImage from '/image/experience.png';
 
 export const communityData = [
   { id: 1, text: '딸기 수익성 관련 질문', like: 4 },
@@ -435,8 +436,11 @@ export const locationData = {
 
 export const experienceInfoData = {
   title: '가족끼리 딸기 따기 체험',
+  url: [experienceImage, experienceImage, experienceImage],
   farmName: '민석농장',
   date: '2024년 5월 3일',
+  applicationPeriod: '2024년 5월 10일',
+  locationInfo: '경기도 수원시 광교로 27번길 5 민석농장',
   time: '10:00',
   capacity: 4,
   detail:
