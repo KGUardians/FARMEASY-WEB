@@ -5,6 +5,7 @@ import DeterminePage from '@pages/Determinepage/DeterminePage';
 import ExperienceListPage from '@pages/Experiencepage/ExperienceListPage';
 import ResultPage from '@pages/Determinepage/ResultPage';
 import MarketPage from '@pages/Marketpage/MarketPage';
+import ExperienceInfoPage from '@pages/Experiencepage/ExperienceInfoPage';
 
 const Router = () => (
   <RouterProvider
@@ -15,6 +16,7 @@ const Router = () => (
           { path: '/', element: <MainPage /> },
           { path: '/determine', element: <DeterminePage /> },
           { path: '/experiencelist', element: <ExperienceListPage /> },
+          { path: '/experienceinfo', element: <ExperienceInfoPage /> },
           { path: '/determine/result', element: <ResultPage /> },
           { path: '/market', element: <MarketPage /> },
         ],
