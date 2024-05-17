@@ -4,7 +4,6 @@ import ErrorMessage from '@components/common/ErrorMessage/ErrorMessage';
 import Button from '@components/common/Button/Button';
 import Horizon from '@components/common/Line/Horizon';
 
-// 폼 데이터의 타입을 정의합니다.
 interface FormInput {
   name: string;
   phoneNumber: string;
