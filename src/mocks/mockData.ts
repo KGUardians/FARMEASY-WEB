@@ -1,6 +1,9 @@
 import banana from '/image/banana.png';
 import lettuce from '/image/lettuce.png';
-import strawberry from '/image/strawberry.png';
+import strawberry1 from '/image/strawberry1.png';
+import strawberry2 from '/image/strawberry2.png';
+import strawberry3 from '/image/strawberry3.png';
+import strawberry4 from '/image/strawberry4.png';
 import sweetPotato from '/image/sweetpotato.png';
 import strawberryIcon from '/cropIcon/strawberry.svg';
 import carrotIcon from '/cropIcon/carrot.svg';
@@ -24,7 +27,7 @@ export const communityData = [
 export const marketData = [
   {
     id: 3,
-    url: strawberry,
+    url: [strawberry1, strawberry2, strawberry3, strawberry4],
     like: false,
     liked: 220,
     type: '딸기',
@@ -35,7 +38,7 @@ export const marketData = [
   },
   {
     id: 1,
-    url: banana,
+    url: [banana],
     like: false,
     liked: 167,
     type: '바나나',
@@ -46,7 +49,7 @@ export const marketData = [
   },
   {
     id: 2,
-    url: lettuce,
+    url: [lettuce],
     like: true,
     liked: 150,
     type: '상추',
@@ -57,7 +60,7 @@ export const marketData = [
   },
   {
     id: 4,
-    url: sweetPotato,
+    url: [sweetPotato],
     like: false,
     type: '고구마',
     liked: 97,
@@ -68,7 +71,7 @@ export const marketData = [
   },
   {
     id: 5,
-    url: banana,
+    url: [banana],
     type: '바나나',
     price: 12400,
     like: true,
@@ -95,7 +98,7 @@ export const cropData = [
 export const experienceData = [
   {
     id: 3,
-    url: strawberry,
+    url: strawberry1,
     like: false,
     title: '가족과 체험',
     farmName: '민석농장',
@@ -140,7 +143,7 @@ export const experienceData = [
   },
   {
     id: 31,
-    url: strawberry,
+    url: strawberry1,
     like: false,
     title: '가족과 체험',
     farmName: '민석농장',

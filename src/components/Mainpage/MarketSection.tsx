@@ -13,8 +13,8 @@ export const MarketSection = () => {
         {marketData.map((item) => (
           <div key={item.id} className="flex flex-col gap-0.5 mt-3 text-xs">
             <img
-              src={item.url}
-              alt={item.url}
+              src={item.url[0]}
+              alt={item.url[0]}
               className="rounded-md min-w-[100px] h-[100px] object-cover"
             />
             <div className="flex justify-between mt-1">
