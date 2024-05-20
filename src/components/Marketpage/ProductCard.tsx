@@ -33,10 +33,10 @@ const ProductCard = ({
       <img
         src={url[0]}
         alt="productImage"
-        className="w-[100px] h-[100px] border rounded-[10px] mr-4"
+        className="size-[100px] border rounded-[10px] mr-4 object-cover"
       />
 
-      <div>
+      <div className="w-2/5">
         <div className="mb-4">
           <p className="text-sm font-medium">
             {farmName} {type}
@@ -52,9 +52,11 @@ const ProductCard = ({
         </div>
       </div>
 
-      <button className="mb-auto ml-16">
-        <img src={cartIcon} alt="cartIcon" />
-      </button>
+      <div className="grid w-1/4">
+        <button className="justify-self-end">
+          <img src={cartIcon} alt="cartIcon" />
+        </button>
+      </div>
     </Link>
   );
 };

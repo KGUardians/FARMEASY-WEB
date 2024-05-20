@@ -18,7 +18,6 @@ const ProductPage = ({ productList }: { productList: ProductInfo[] }) => {
 
   return (
     <div className="grid pt-5 pb-4">
-      {/* <BackBar title={'농산물 직거래'} /> */}
       <TopBar title={'농산물 직거래'} />
 
       <CarouselDefault url={product.url} />

@@ -7,7 +7,7 @@ interface ProductListProps {
 
 const ProductListSection = ({ productList }: ProductListProps) => {
   return (
-    <div className="justify-items-center mt-[-16px] px-2">
+    <div className="mt-[-16px] px-2">
       {productList.map((item) => (
         <ProductCard
           id={item.id}
