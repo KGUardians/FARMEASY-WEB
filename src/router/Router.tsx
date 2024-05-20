@@ -6,7 +6,6 @@ import ExperienceListPage from '@pages/Experiencepage/ExperienceListPage';
 import ResultPage from '@pages/Determinepage/ResultPage';
 import MarketPage from '@pages/Marketpage/MarketPage';
 import ExperienceInfoPage from '@pages/Experiencepage/ExperienceInfoPage';
-import { marketData } from '@mocks/mockData';
 import ProductPage from '@pages/Marketpage/ProductPage';
 import ExperienceApplyPage from '@pages/Experiencepage/ExperienceApplyPage';
 
@@ -23,10 +22,7 @@ const Router = () => (
           { path: '/experienceapply', element: <ExperienceApplyPage /> },
           { path: '/determine/result', element: <ResultPage /> },
           { path: '/market', element: <MarketPage /> },
-          {
-            path: '/market/:id',
-            element: <ProductPage productList={marketData} />,
-          },
+          { path: '/market/:id', element: <ProductPage /> },
         ],
       },
     ])}

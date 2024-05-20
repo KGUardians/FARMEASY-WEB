@@ -1,5 +1,6 @@
 export interface ProductInfo {
   id: number;
+  cropId: number;
   url: string[];
   like?: boolean;
   liked: number;

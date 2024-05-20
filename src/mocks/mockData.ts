@@ -4,7 +4,10 @@ import strawberry1 from '/image/strawberry1.png';
 import strawberry2 from '/image/strawberry2.png';
 import strawberry3 from '/image/strawberry3.png';
 import strawberry4 from '/image/strawberry4.png';
+import strawberry5 from '/image/strawberry5.png';
 import sweetPotato from '/image/sweetpotato.png';
+import carrot1 from '/image/carrot1.png';
+import carrot2 from '/image/carrot2.png';
 import strawberryIcon from '/cropIcon/strawberry.svg';
 import carrotIcon from '/cropIcon/carrot.svg';
 import grapeIcon from '/cropIcon/grape.svg';
@@ -27,7 +30,8 @@ export const communityData = [
 
 export const marketData = [
   {
-    id: 3,
+    id: 1,
+    cropId: 1,
     url: [strawberry1, strawberry2, strawberry3, strawberry4],
     like: false,
     liked: 220,
@@ -38,7 +42,8 @@ export const marketData = [
     place: '경기도 화성시 반월동',
   },
   {
-    id: 1,
+    id: 2,
+    cropId: 5,
     url: [banana],
     like: false,
     liked: 167,
@@ -49,7 +54,8 @@ export const marketData = [
     place: '경기도 화성시 반월동',
   },
   {
-    id: 2,
+    id: 3,
+    cropId: 6,
     url: [lettuce],
     like: true,
     liked: 150,
@@ -61,6 +67,7 @@ export const marketData = [
   },
   {
     id: 4,
+    cropId: 3,
     url: [sweetPotato],
     like: false,
     type: '고구마',
@@ -72,11 +79,36 @@ export const marketData = [
   },
   {
     id: 5,
-    url: [banana],
-    type: '바나나',
+    cropId: 2,
+    url: [carrot1],
+    type: '당근',
     price: 12400,
     like: true,
-    liked: 62,
+    liked: 230,
+    weight: 750,
+    farmName: '민석농장',
+    place: '경기도 화성시 반월동',
+  },
+  {
+    id: 6,
+    cropId: 2,
+    url: [carrot2],
+    type: '당근',
+    price: 11600,
+    like: true,
+    liked: 113,
+    weight: 750,
+    farmName: '민석농장',
+    place: '경기도 화성시 반월동',
+  },
+  {
+    id: 7,
+    cropId: 1,
+    url: [strawberry5],
+    type: '딸기',
+    price: 11600,
+    like: true,
+    liked: 113,
     weight: 750,
     farmName: '민석농장',
     place: '경기도 화성시 반월동',

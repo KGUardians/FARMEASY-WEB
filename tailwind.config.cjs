@@ -1,4 +1,4 @@
-import tailwindScrollbarHide from 'tailwind-scrollbar-hide';
+const tailwindScrollbarHide = require('tailwind-scrollbar-hide');
 
 const withMT = require('@material-tailwind/react/utils/withMT');
 
