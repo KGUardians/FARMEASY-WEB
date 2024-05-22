@@ -9,6 +9,7 @@ import ExperienceInfoPage from '@pages/Experiencepage/ExperienceInfoPage';
 import ProductPage from '@pages/Marketpage/ProductPage';
 import ExperienceApplyPage from '@pages/Experiencepage/ExperienceApplyPage';
 import SignUpPage from '@pages/Signuppage/SignUpPage';
+import CommunityInfoPage from '@pages/Communitypage/CommunityInfoPage';
 
 const Router = () => (
   <RouterProvider
@@ -25,6 +26,7 @@ const Router = () => (
           { path: '/market', element: <MarketPage /> },
           { path: '/market/:id', element: <ProductPage /> },
           { path: '/signup', element: <SignUpPage /> },
+          { path: '/communityInfo', element: <CommunityInfoPage /> },
         ],
       },
     ])}
