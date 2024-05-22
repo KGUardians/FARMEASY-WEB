@@ -19,6 +19,7 @@ import tomatoIcon from '/cropIcon/tomato.svg';
 import eggplantIcon from '/cropIcon/eggplant.svg';
 import cucumberIcon from '/cropIcon/cucumber.svg';
 import experienceImage from '/image/experience.png';
+import avatar from '/image/userAvatar.png';
 
 export const communityData = [
   { id: 1, text: '딸기 수익성 관련 질문', like: 4 },
@@ -478,4 +479,19 @@ export const experienceInfoData = {
   capacity: 4,
   detail:
     '[지원가능] 5월 3일(금) 오전 10시 OO농장에서 딸기 따기 체험\n작업일정 : 10:00 ~ 14:00 (점심시간 1시간 포함)\n작업내용 : 딸기 따는 방법, 상품 분류, 직접 맛보기 등\n현장작업 시 준수사항- 담당자, 인솔자 작업 통제 지시에 따라주세요.- 흡연은 지정된 장소 외는 절대금지 합니다.- 작업도구가 날카로우니 인근 사람들을 향해 겨누지 않습니다.[지원가능] 5월 3일(금) 오전 10시 OO농장에서 딸기 따기 체험\n작업일정 : 10:00 ~ 14:00 (점심시간 1시간 포함)\n작업내용 : 딸기 따는 방법, 상품 분류, 직접 맛보기 등\n현장작업 시 준수사항- 담당자, 인솔자 작업 통제 지시에 따라주세요.- 흡연은 지정된 장소 외는 절대금지 합니다.- 작업도구가 날카로우니 인근 사람들을 향해 겨누지 않습니다.[지원가능] 5월 3일(금) 오전 10시 OO농장에서 딸기 따기 체험\n작업일정 : 10:00 ~ 14:00 (점심시간 1시간 포함)\n작업내용 : 딸기 따는 방법, 상품 분류, 직접 맛보기 등\n현장작업 시 준수사항- 담당자, 인솔자 작업 통제 지시에 따라주세요.- 흡연은 지정된 장소 외는 절대금지 합니다.- 작업도구가 날카로우니 인근 사람들을 향해 겨누지 않습니다.',
+};
+
+export const userData = {
+  name: '사나이성민',
+  avatar: avatar,
+};
+
+export const postInfoData = {
+  title: '잎 가장자리 검은색 변색',
+  url: [lettuce, lettuce, lettuce],
+  descript:
+    '3일 전부터 잎파리에 검은색 반점 같은게 1~2개 생기더니 이젠 전체가 이렇게 퍼졌는데 어떻게 해야하나요? 문제의 원인도 같이 알려주시면 감사하겠습니다!',
+  like: 27,
+  comments: 2,
+  view: 31,
 };
