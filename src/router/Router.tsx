@@ -8,6 +8,7 @@ import MarketPage from '@pages/Marketpage/MarketPage';
 import ExperienceInfoPage from '@pages/Experiencepage/ExperienceInfoPage';
 import ProductPage from '@pages/Marketpage/ProductPage';
 import ExperienceApplyPage from '@pages/Experiencepage/ExperienceApplyPage';
+import SignUpPage from '@pages/Signuppage/SignUpPage';
 
 const Router = () => (
   <RouterProvider
@@ -23,6 +24,7 @@ const Router = () => (
           { path: '/determine/result', element: <ResultPage /> },
           { path: '/market', element: <MarketPage /> },
           { path: '/market/:id', element: <ProductPage /> },
+          { path: '/signup', element: <SignUpPage /> },
         ],
       },
     ])}
