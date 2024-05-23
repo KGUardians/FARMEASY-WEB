@@ -4,7 +4,10 @@ import strawberry1 from '/image/strawberry1.png';
 import strawberry2 from '/image/strawberry2.png';
 import strawberry3 from '/image/strawberry3.png';
 import strawberry4 from '/image/strawberry4.png';
+import strawberry5 from '/image/strawberry5.png';
 import sweetPotato from '/image/sweetpotato.png';
+import carrot1 from '/image/carrot1.png';
+import carrot2 from '/image/carrot2.png';
 import strawberryIcon from '/cropIcon/strawberry.svg';
 import carrotIcon from '/cropIcon/carrot.svg';
 import grapeIcon from '/cropIcon/grape.svg';
@@ -17,6 +20,7 @@ import eggplantIcon from '/cropIcon/eggplant.svg';
 import cucumberIcon from '/cropIcon/cucumber.svg';
 import experienceImage from '/image/experience.png';
 import { BoardSimpleType } from '@type/community';
+import avatar from '/image/userAvatar.png';
 
 export const communityData = [
   { id: 1, text: '딸기 수익성 관련 질문', like: 4 },
@@ -28,7 +32,8 @@ export const communityData = [
 
 export const marketData = [
   {
-    id: 3,
+    id: 1,
+    cropId: 1,
     url: [strawberry1, strawberry2, strawberry3, strawberry4],
     like: false,
     liked: 220,
@@ -39,7 +44,8 @@ export const marketData = [
     place: '경기도 화성시 반월동',
   },
   {
-    id: 1,
+    id: 2,
+    cropId: 5,
     url: [banana],
     like: false,
     liked: 167,
@@ -50,7 +56,8 @@ export const marketData = [
     place: '경기도 화성시 반월동',
   },
   {
-    id: 2,
+    id: 3,
+    cropId: 6,
     url: [lettuce],
     like: true,
     liked: 150,
@@ -62,6 +69,7 @@ export const marketData = [
   },
   {
     id: 4,
+    cropId: 3,
     url: [sweetPotato],
     like: false,
     type: '고구마',
@@ -73,11 +81,36 @@ export const marketData = [
   },
   {
     id: 5,
-    url: [banana],
-    type: '바나나',
+    cropId: 2,
+    url: [carrot1],
+    type: '당근',
     price: 12400,
     like: true,
-    liked: 62,
+    liked: 230,
+    weight: 750,
+    farmName: '민석농장',
+    place: '경기도 화성시 반월동',
+  },
+  {
+    id: 6,
+    cropId: 2,
+    url: [carrot2],
+    type: '당근',
+    price: 11600,
+    like: true,
+    liked: 113,
+    weight: 750,
+    farmName: '민석농장',
+    place: '경기도 화성시 반월동',
+  },
+  {
+    id: 7,
+    cropId: 1,
+    url: [strawberry5],
+    type: '딸기',
+    price: 11600,
+    like: true,
+    liked: 113,
     weight: 750,
     farmName: '민석농장',
     place: '경기도 화성시 반월동',
@@ -1063,3 +1096,18 @@ export const boardListSimpleData: BoardSimpleType[] = [
     comment: 6,
   },
 ];
+
+export const userData = {
+  name: '사나이성민',
+  avatar: avatar,
+};
+
+export const postInfoData = {
+  title: '잎 가장자리 검은색 변색',
+  url: [lettuce, lettuce, lettuce],
+  descript:
+    '3일 전부터 잎파리에 검은색 반점 같은게 1~2개 생기더니 이젠 전체가 이렇게 퍼졌는데 어떻게 해야하나요? 문제의 원인도 같이 알려주시면 감사하겠습니다!',
+  like: 27,
+  comments: 2,
+  view: 31,
+};
