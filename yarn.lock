@@ -901,6 +901,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@toss/date@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@toss/date@npm:1.2.0"
+  dependencies:
+    date-fns: "npm:^2.25.0"
+  checksum: 10c0/0eedc2a079a69434c81775c842b503534afb74131ca6f5ecf0cccd927dc1e00ea2a4b1c51050a950d805e218b69b7685ece2f64ab3c4874746475e91c09797c8
+  languageName: node
+  linkType: hard
+
 "@toss/utils@npm:^1.5.0":
   version: 1.5.0
   resolution: "@toss/utils@npm:1.5.0"
@@ -1954,6 +1963,7 @@ __metadata:
   dependencies:
     "@hookform/resolvers": "npm:^3.4.0"
     "@material-tailwind/react": "npm:^2.1.9"
+    "@toss/date": "npm:^1.2.0"
     "@toss/utils": "npm:^1.5.0"
     "@types/node": "npm:^20.12.12"
     "@types/react": "npm:^18.2.64"
