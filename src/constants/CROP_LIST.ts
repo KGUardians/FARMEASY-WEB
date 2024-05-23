@@ -1,0 +1,15 @@
+export const CROP_LIST = [
+  { name: '딸기', value: 'STRAWBERRY' },
+  { name: '당근', value: 'CARROT' },
+  { name: '포도', value: 'GRAPE' },
+  { name: '사과', value: 'APPLE' },
+  { name: '오렌지', value: 'ORANGE' },
+  { name: '상추', value: 'LETTUCE' },
+  { name: '감자', value: 'POTATO' },
+  { name: '토마토', value: 'TOMATO' },
+  { name: '가지', value: 'EGGPLANT' },
+  { name: '오이', value: 'CUCUMBER' },
+  { name: '배', value: 'PEAR' },
+  { name: '감자', value: 'POTATO' },
+  { name: '수박', value: 'WATERMELON' },
+] as const;

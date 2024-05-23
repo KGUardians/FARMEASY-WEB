@@ -12,17 +12,16 @@ interface FormInput {
   phoneNumber: string;
   numberOfParticipants: string;
 }
+const formSchema = z.object({
+  name: z.string().min(1, '이름을 입력해주세요.'),
+  phoneNumber: z.string().regex(/^\d+$/, "'-'를 제외한 숫자만 입력해주세요."),
+  numberOfParticipants: z
+    .string()
+    .regex(/^\d+$/, '숫자만 입력해주세요.')
+    .transform(Number),
+});
 
 const InputApplyInfoSection: React.FC = () => {
-  const formSchema = z.object({
-    name: z.string().min(1, '이름을 입력해주세요.'),
-    phoneNumber: z.string().regex(/^\d+$/, "'-'를 제외한 숫자만 입력해주세요."),
-    numberOfParticipants: z
-      .string()
-      .regex(/^\d+$/, '숫자만 입력해주세요.')
-      .transform(Number),
-  });
-
   const {
     register,
     handleSubmit,

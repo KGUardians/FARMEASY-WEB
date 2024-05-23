@@ -9,6 +9,7 @@ import ExperienceInfoPage from '@pages/Experiencepage/ExperienceInfoPage';
 import { marketData } from '@mocks/mockData';
 import ProductPage from '@pages/Marketpage/ProductPage';
 import ExperienceApplyPage from '@pages/Experiencepage/ExperienceApplyPage';
+import CommunityPage from '@pages/Communitypage/CommunityPage';
 
 const Router = () => (
   <RouterProvider
@@ -23,6 +24,7 @@ const Router = () => (
           { path: '/experienceapply', element: <ExperienceApplyPage /> },
           { path: '/determine/result', element: <ResultPage /> },
           { path: '/market', element: <MarketPage /> },
+          { path: '/community', element: <CommunityPage /> },
           {
             path: '/market/:id',
             element: <ProductPage productList={marketData} />,
