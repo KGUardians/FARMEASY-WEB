@@ -40,7 +40,7 @@ const BoardCard = ({
         <div className="px-4 py-2">
           {/* 게시글 제목, 내용, 사진 */}
           <div className="flex justify-between h-[90px] gap-2">
-            <div className={`${url ? 'w-4/5' : 'w-full'} flex flex-col gap-1`}>
+            <div className={`${url ? 'w-2/3' : 'w-full'} flex flex-col gap-1`}>
               <h2 className="font-semibold truncate">{title}</h2>
               <p className="text-sm truncate">{text}</p>
             </div>

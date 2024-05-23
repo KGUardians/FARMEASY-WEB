@@ -51,19 +51,23 @@ const CommunityPage = () => {
       />
 
       {/* 검색창 */}
-      <div className="px-8 my-3">
-        <SearchBar
-          clickButton={clickSearchButton}
-          onChange={handleSearchText}
-          value={searchText}
-          placeholder="검색어를 입력하세요"
-        />
+      <div className="px-4 my-3">
+        <div className="px-4">
+          <SearchBar
+            clickButton={clickSearchButton}
+            onChange={handleSearchText}
+            value={searchText}
+            placeholder="검색어를 입력하세요"
+          />
+        </div>
+
+        <Horizon color="darkgray" />
       </div>
 
-      <Horizon color="darkgray" />
-
       {/* 게시글 리스트 */}
-      <BoardListSection data={boardList} />
+      <div className="px-4">
+        <BoardListSection data={boardList} />
+      </div>
     </section>
   );
 };
