@@ -6,4 +6,4 @@ export const MenuList = [
   { id: 5, name: '나의 정보', to: '/' },
   { id: 6, name: '고객센터', to: '/' },
   { id: 7, name: '로그아웃', to: '/' },
-];
+] as const;
