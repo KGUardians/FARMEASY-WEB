@@ -16,8 +16,8 @@ const CommunityPostPage = () => {
       <UploadImageSection />
 
       <PostSection
-        onClick={setSelectedCropType}
         selectedCrop={selectedCropType}
+        setSelectedCrop={setSelectedCropType}
       />
     </section>
   );
