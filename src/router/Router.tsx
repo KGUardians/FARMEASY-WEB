@@ -11,6 +11,7 @@ import ExperienceApplyPage from '@pages/Experiencepage/ExperienceApplyPage';
 import CommunityPage from '@pages/Communitypage/CommunityPage';
 import SignUpPage from '@pages/Signuppage/SignUpPage';
 import CommunityInfoPage from '@pages/Communitypage/CommunityInfoPage';
+import CommunityPostPage from '@pages/Communitypage/CommunityPostPage';
 
 const Router = () => (
   <RouterProvider
@@ -26,13 +27,11 @@ const Router = () => (
           { path: '/determine/result', element: <ResultPage /> },
           { path: '/market', element: <MarketPage /> },
           { path: '/community', element: <CommunityPage /> },
-          {
-            path: '/market/:id',
-            element: <ProductPage productList={marketData} />,
-          },
+          { path: '/market/:id', element: <ProductPage /> },
           { path: '/market/:id', element: <ProductPage /> },
           { path: '/signup', element: <SignUpPage /> },
           { path: '/communityInfo', element: <CommunityInfoPage /> },
+          { path: '/communityPost', element: <CommunityPostPage /> },
         ],
       },
     ])}
