@@ -10,6 +10,6 @@ export const CROP_LIST = [
   { name: '가지', value: 'EGGPLANT' },
   { name: '오이', value: 'CUCUMBER' },
   { name: '배', value: 'PEAR' },
-  { name: '감자', value: 'POTATO' },
   { name: '수박', value: 'WATERMELON' },
+  { name: '기타', value: 'OTHER' },
 ] as const;
