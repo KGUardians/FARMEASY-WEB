@@ -33,6 +33,8 @@
       "@styles/*": ["./src/styles/*"],
       "@type/*": ["./src/types/*"],
       "@utils/*": ["./src/utils/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@api/*": ["./src/api/*"],
       "@/*": ["./src/*"]
     }
   },
