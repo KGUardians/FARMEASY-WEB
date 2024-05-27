@@ -20,6 +20,7 @@ const CropSelector = ({ register, selected, onSelect }: CropSelectorProps) => {
         {CROP_LIST.map((crop, index) => (
           <div key={index}>
             <button
+              type="button"
               onClick={() => onSelect(crop)}
               className={`${
                 selected?.value === crop.value
