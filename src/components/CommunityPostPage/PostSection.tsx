@@ -74,6 +74,7 @@ const PostSection = () => {
       className="flex flex-col p-4 space-y-6"
       onSubmit={handleSubmit(onSubmit)}
     >
+      {/* 이미지 업로드 */}
       <UploadImageSection
         selectedImages={selectedImages}
         handleImageUpload={handleImageUpload}
@@ -95,6 +96,7 @@ const PostSection = () => {
           {CROP_LIST.map((crop) => (
             <div key={crop.value}>
               <button
+                type="button"
                 onClick={() => {
                   setSelectedCropType(crop);
                   handleCropCategoryClick(crop.name);
