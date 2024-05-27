@@ -2,37 +2,33 @@ import uploadImage from '/uploadImage.svg';
 import cancelIcon from '/cancelIcon.svg';
 import Horizon from '@components/common/Line/Horizon';
 
-interface UploadImageSectionProps {
-  selectedImages: File[];
+interface ImageUploaderProps {
   handleImageUpload: (files: FileList) => void;
   handleImageCancel: (index: number) => void;
+  selectedImages: File[];
 }
 
-const UploadImageSection = ({
-  selectedImages,
+const ImageUploader = ({
   handleImageUpload,
   handleImageCancel,
-}: UploadImageSectionProps) => {
+  selectedImages,
+}: ImageUploaderProps) => {
   return (
     <>
       <div className="grid grid-flow-col auto-cols-max p-1 gap-1 overflow-x-auto scrollbar-hide items-center">
-        <div className="grid place-items-center space-y-[-20px] size-[74px] border-[1.5px] border-solid border-gray-300 rounded-md">
+        <div className="grid place-items-center space-y-[-12px] size-[74px] border-[1.5px] border-solid border-gray-300 rounded-md">
           <label htmlFor="upload-input" className="cursor-pointer">
-            <img className="w-6 h-6" src={uploadImage} alt="Upload" />
+            <img className="size-6 mt-2" src={uploadImage} alt="upload" />
           </label>
 
-          <div className="flex">
-            <p>
-              <span
-                className={
-                  selectedImages.length > 0 ? 'text-fp-green font-bold' : ''
-                }
-              >
-                {selectedImages.length}
-              </span>
-              {' / 10'}
-            </p>
-          </div>
+          <p
+            className={
+              selectedImages.length > 0 ? 'text-fp-green font-bold' : ''
+            }
+          >
+            {selectedImages.length}
+            <span className="text-black font-medium">{' / 10'}</span>
+          </p>
 
           <input
             id="upload-input"
@@ -46,10 +42,10 @@ const UploadImageSection = ({
 
         <div className="flex gap-1">
           {selectedImages.map((image, index) => (
-            <div key={index} className="relative flex-shrink-0">
+            <div key={index} className="relative">
               <img
                 src={URL.createObjectURL(image)}
-                className="size-[74px] rounded-md object-cover"
+                className="size-[74px] border-[1.5px] border-gray-300 border-solid rounded-md object-cover"
                 alt={`Image ${index + 1}`}
               />
               <img
@@ -58,6 +54,11 @@ const UploadImageSection = ({
                 onClick={() => handleImageCancel(index)}
                 alt="Cancel"
               />
+              {index === 0 && (
+                <div className="absolute bottom-0 w-full h-5 flex flex-col opacity-80 border-x-[1.5px] border-b-[1.5px] justify-center bg-black rounded-b-md text-white text-xs text-center">
+                  대표사진
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -68,4 +69,4 @@ const UploadImageSection = ({
   );
 };
 
-export default UploadImageSection;
+export default ImageUploader;
