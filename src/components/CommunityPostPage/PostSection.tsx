@@ -6,24 +6,26 @@ import Horizon from '@components/common/Line/Horizon';
 import CommunityTypeSelector from '@components/common/CommunityTypeSelector/CommunityTypeSelector';
 import Button from '@components/common/Button/Button';
 import ErrorMessage from '@components/common/ErrorMessage/ErrorMessage';
+import UploadImageSection from '@components/CommunityPostPage/UploadImageSection';
 import { z } from 'zod';
 import { CROP_LIST } from '@constants/CROP_LIST';
-import { CommunityCropType } from '@type/crop';
 import { PostData } from '@type/postData';
-
-interface CropSelectorPops {
-  setSelectedCrop: (value: CommunityCropType | null) => void;
-  selectedCrop: CommunityCropType | null;
-}
+import { useCropTypeStore } from '@store/cropTypeStore';
 
 const formSchema = z.object({
   title: z.string().min(1, '제목을 입력해주세요.'),
   content: z.string().min(1, '내용을 입력해주세요.'),
 });
 
-const PostSection = ({ setSelectedCrop, selectedCrop }: CropSelectorPops) => {
+const PostSection = () => {
   const [mode, setMode] = useState<'free' | 'question'>('free');
   const [cropCategory, setCropCategory] = useState<string>('');
+  const [selectedImages, setSelectedImages] = useState<File[]>([]);
+
+  const selectedCropType = useCropTypeStore((state) => state.selectedType);
+  const setSelectedCropType = useCropTypeStore(
+    (state) => state.setSelectedType,
+  );
 
   const {
     register,
@@ -41,11 +43,28 @@ const PostSection = ({ setSelectedCrop, selectedCrop }: CropSelectorPops) => {
     setCropCategory(category);
   };
 
+  const handleImageUpload = (files: FileList) => {
+    const newImagesCount = selectedImages.length + files.length;
+    // 이미지 업로드 제한 로직
+    if (newImagesCount > 10) {
+      alert('이미지 업로드는 10장이 최대입니다.');
+      return;
+    }
+
+    setSelectedImages([...selectedImages, ...Array.from(files)]);
+  };
+
+  const handleImageCancel = (index: number) => {
+    const updatedImages = selectedImages.filter((_, i) => i !== index);
+    setSelectedImages(updatedImages);
+  };
+
   const onSubmit: SubmitHandler<PostData> = (data) => {
     const postData: PostData = {
       ...data,
-      type: mode === 'question' ? 'question' : 'free',
+      type: mode,
       cropCategory: cropCategory,
+      images: selectedImages,
     };
     console.log(postData);
   };
@@ -55,6 +74,12 @@ const PostSection = ({ setSelectedCrop, selectedCrop }: CropSelectorPops) => {
       className="flex flex-col p-4 space-y-6"
       onSubmit={handleSubmit(onSubmit)}
     >
+      <UploadImageSection
+        selectedImages={selectedImages}
+        handleImageUpload={handleImageUpload}
+        handleImageCancel={handleImageCancel}
+      />
+
       {/* 글 유형 선택 */}
       <div className="flex gap-5 items-center">
         <h1 className="font-bold">글 유형</h1>
@@ -71,11 +96,11 @@ const PostSection = ({ setSelectedCrop, selectedCrop }: CropSelectorPops) => {
             <div key={crop.value}>
               <button
                 onClick={() => {
-                  setSelectedCrop(crop);
+                  setSelectedCropType(crop);
                   handleCropCategoryClick(crop.name);
                 }}
                 className={`${
-                  selectedCrop?.value === crop.value
+                  selectedCropType?.value === crop.value
                     ? 'border-fp-green text-fp-green font-semibold'
                     : 'border-gray-500'
                 } h-6 text-xs border outline-none rounded-full w-11`}
@@ -109,6 +134,7 @@ const PostSection = ({ setSelectedCrop, selectedCrop }: CropSelectorPops) => {
         />
         {errors.content && <ErrorMessage text={errors.content.message} />}
       </div>
+
       <Horizon color="darkgray" />
       <Button type="submit">작성하기</Button>
     </form>

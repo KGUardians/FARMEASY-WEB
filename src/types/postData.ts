@@ -8,4 +8,5 @@ export interface PostData {
   title: string;
   content: string;
   cropCategory: string;
+  images: File[];
 }
