@@ -1,9 +1,9 @@
 import determineImage from '/image/linktodetermine.png';
 import { Link } from 'react-router-dom';
 import { Navbar } from '@components/common/Navbar/Navbar';
-import { CommunitySection } from '@components/Mainpage/CommunitySection';
-import { FarmExperienceSection } from '@components/Mainpage/FarmExperienceSection';
-import { MarketSection } from '@components/Mainpage/MarketSection';
+import { CommunitySection } from '@components/MainPage/CommunitySection';
+import { FarmExperienceSection } from '@components/MainPage/FarmExperienceSection';
+import { MarketSection } from '@components/MainPage/MarketSection';
 
 const MainPage = () => {
   return (

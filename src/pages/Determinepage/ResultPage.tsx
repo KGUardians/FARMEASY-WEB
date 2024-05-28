@@ -8,7 +8,7 @@ const ResultPage = () => {
   const selectedCrop = useCropStore((state) => state.selectedCrop);
   const navigate = useNavigate();
 
-  const handleSucces = () => {
+  const handleSuccess = () => {
     navigate('/');
   };
 
@@ -25,7 +25,7 @@ const ResultPage = () => {
             <p className="mt-4 text-lg">해충이 발견되지 않았습니다!</p>
           </div>
           <div className="absolute top-[640px]">
-            <Button onClick={handleSucces} className="w-[340px]">
+            <Button onClick={handleSuccess} className="w-[340px]">
               돌아가기
             </Button>
           </div>

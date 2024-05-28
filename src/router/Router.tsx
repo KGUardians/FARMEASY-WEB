@@ -1,17 +1,17 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './Layout';
-import MainPage from '@pages/Mainpage/MainPage';
-import DeterminePage from '@pages/Determinepage/DeterminePage';
-import ExperienceListPage from '@pages/Experiencepage/ExperienceListPage';
-import ResultPage from '@pages/Determinepage/ResultPage';
-import MarketPage from '@pages/Marketpage/MarketPage';
-import ExperienceInfoPage from '@pages/Experiencepage/ExperienceInfoPage';
-import ProductPage from '@pages/Marketpage/ProductPage';
-import ExperienceApplyPage from '@pages/Experiencepage/ExperienceApplyPage';
-import CommunityPage from '@pages/Communitypage/CommunityPage';
-import SignUpPage from '@pages/Signuppage/SignUpPage';
-import CommunityInfoPage from '@pages/Communitypage/CommunityInfoPage';
-import CommunityPostPage from '@pages/Communitypage/CommunityPostPage';
+import MainPage from '@pages/MainPage/MainPage';
+import DeterminePage from '@pages/DeterminePage/DeterminePage';
+import ExperienceListPage from '@pages/ExperiencePage/ExperienceListPage';
+import ResultPage from '@pages/DeterminePage/ResultPage';
+import MarketPage from '@pages/MarketPage/MarketPage';
+import ExperienceInfoPage from '@pages/ExperiencePage/ExperienceInfoPage';
+import ProductPage from '@pages/MarketPage/ProductPage';
+import ExperienceApplyPage from '@pages/ExperiencePage/ExperienceApplyPage';
+import CommunityPage from '@pages/CommunityPage/CommunityPage';
+import SignUpPage from '@pages/SignUpPage/SignUpPage';
+import CommunityInfoPage from '@pages/CommunityPage/CommunityInfoPage';
+import CommunityPostPage from '@pages/CommunityPage/CommunityPostPage';
 
 const Router = () => (
   <RouterProvider
@@ -22,16 +22,15 @@ const Router = () => (
           { path: '/', element: <MainPage /> },
           { path: '/determine', element: <DeterminePage /> },
           { path: '/experiencelist', element: <ExperienceListPage /> },
-          { path: '/experienceinfo', element: <ExperienceInfoPage /> },
+          { path: '/experience/:id', element: <ExperienceInfoPage /> },
           { path: '/experienceapply', element: <ExperienceApplyPage /> },
           { path: '/determine/result', element: <ResultPage /> },
           { path: '/market', element: <MarketPage /> },
           { path: '/community', element: <CommunityPage /> },
           { path: '/market/:id', element: <ProductPage /> },
-          { path: '/market/:id', element: <ProductPage /> },
           { path: '/signup', element: <SignUpPage /> },
-          { path: '/communityInfo', element: <CommunityInfoPage /> },
-          { path: '/communityPost', element: <CommunityPostPage /> },
+          { path: '/community/:id', element: <CommunityInfoPage /> },
+          { path: '/communitypost', element: <CommunityPostPage /> },
         ],
       },
     ])}

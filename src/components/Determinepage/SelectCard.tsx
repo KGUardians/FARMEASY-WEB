@@ -1,8 +1,8 @@
 import selectCropImage from '/selectCropFirst.svg';
 import searchIcon from '/searchIcon.svg';
 import { cropData } from '@mocks/mockData';
-import { CropButton } from './CropButton';
 import useCropStore from '@store/cropStore';
+import { CropButton } from './CropButton';
 
 const SelectCard = () => {
   const selectedCrop = useCropStore((state) => state.selectedCrop);

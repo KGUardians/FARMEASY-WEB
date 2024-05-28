@@ -10,7 +10,7 @@ const CommunityTopBar = () => {
       <TopBar
         title={'게시판'}
         right={
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 mx-4">
             <img src={notification} alt="notification" />
             <img src={upload} alt="upload" />
             <img src={kebab} alt="kebab" />

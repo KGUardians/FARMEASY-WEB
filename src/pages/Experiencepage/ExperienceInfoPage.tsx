@@ -1,5 +1,5 @@
-import BottomBar from '@components/ExperienceInfopage/BottomBar';
-import ExperienceDetailSection from '@components/ExperienceInfopage/ExperienceDetailSection';
+import BottomBar from '@components/ExperienceInfoPage/BottomBar';
+import ExperienceDetailSection from '@components/ExperienceInfoPage/ExperienceDetailSection';
 import { CarouselDefault } from '@components/common/Carousel/Carousel';
 import TopBar from '@components/common/TopBar/TopBar';
 import { experienceInfoData } from '@mocks/mockData';

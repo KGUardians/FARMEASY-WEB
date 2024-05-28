@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from 'react';
-import SignUpForm from '@components/SignUppage/SignUpForm';
+import SignUpForm from '@components/SignUpPage/SignUpForm';
 import TopBar from '@components/common/TopBar/TopBar';
 
 const App: React.FC = () => {

@@ -3,12 +3,12 @@ import Horizon from '@components/common/Line/Horizon';
 import CommunityTypeSelector from '@components/common/CommunityTypeSelector/CommunityTypeSelector';
 import Button from '@components/common/Button/Button';
 import { PostData } from '@type/postData';
-import CropSelector from './CropSelector';
-import InputTitle from './InputTitle';
 import InputContent from '@components/CommunityPostPage/InputContent';
-import ImageUploader from './ImageUploader';
 import useImageUpload from '@/hooks/common/useImageUpload';
 import usePostCommunityForm from '@/hooks/common/usePostCommunityForm';
+import ImageUploader from './ImageUploader';
+import CropSelector from './CropSelector';
+import InputTitle from './InputTitle';
 
 const PostSection = () => {
   const { selectedImages, handleImageUpload, handleImageCancel } =

@@ -1,5 +1,5 @@
-import ExperienceInfoSection from '@components/ExperienceApplypage/ExperienceInfoSection';
-import InputApplyInfoSection from '@components/ExperienceApplypage/InputApplyInfoSection';
+import ExperienceInfoSection from '@components/ExperienceApplyPage/ExperienceInfoSection';
+import InputApplyInfoSection from '@components/ExperienceApplyPage/InputApplyInfoSection';
 import TopBar from '@components/common/TopBar/TopBar';
 import { experienceInfoData } from '@mocks/mockData';
 import { Suspense } from 'react';
