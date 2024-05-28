@@ -30,8 +30,8 @@ const Router = () => (
           { path: '/market/:id', element: <ProductPage /> },
           { path: '/market/:id', element: <ProductPage /> },
           { path: '/signup', element: <SignUpPage /> },
-          { path: '/communityInfo', element: <CommunityInfoPage /> },
-          { path: '/communityPost', element: <CommunityPostPage /> },
+          { path: '/communityinfo', element: <CommunityInfoPage /> },
+          { path: '/communitypost', element: <CommunityPostPage /> },
         ],
       },
     ])}
