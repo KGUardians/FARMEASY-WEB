@@ -8,7 +8,7 @@ import TopBar from '@components/common/TopBar/TopBar';
 import { boardListSimpleData } from '@mocks/mockData';
 import { useCropTypeStore } from '@store/cropTypeStore';
 import { BoardSimpleType, boardType } from '@type/community';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 const CommunityPage = () => {
   const [mode, setMode] = useState<boardType>('free');
@@ -27,9 +27,12 @@ const CommunityPage = () => {
     else if (value === '자유게시판') setMode('free');
   };
 
-  const handleSearchText = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchText(e.target.value);
-  };
+  const handleSearchText = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setSearchText(e.target.value);
+    },
+    [],
+  );
 
   const clickSearchButton = () => {}; // 검색 버튼 클릭 시 액션이 될 함수
 
