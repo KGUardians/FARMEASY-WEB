@@ -29,7 +29,7 @@ const Router = () => (
           { path: '/community', element: <CommunityPage /> },
           { path: '/market/:id', element: <ProductPage /> },
           { path: '/signup', element: <SignUpPage /> },
-          { path: '/communityinfo', element: <CommunityInfoPage /> },
+          { path: '/community/:id', element: <CommunityInfoPage /> },
           { path: '/communitypost', element: <CommunityPostPage /> },
         ],
       },
