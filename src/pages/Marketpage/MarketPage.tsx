@@ -1,5 +1,5 @@
-import ProductListSection from '@components/Marketpage/ProductListSection';
-import ProductSelectCard from '@components/Marketpage/ProductSelectCard';
+import ProductListSection from '@components/MarketPage/ProductListSection';
+import ProductSelectCard from '@components/MarketPage/ProductSelectCard';
 import { Navbar } from '@components/common/Navbar/Navbar';
 import { marketData } from '@mocks/mockData';
 

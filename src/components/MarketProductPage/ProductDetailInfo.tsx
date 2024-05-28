@@ -1,8 +1,8 @@
-import { ProductInfo } from '../../types/productList';
 import { commaizeNumber } from '@toss/utils';
-import emptyHeartIcon from '../../../public/emptyHeart.svg';
-import filledHeartIcon from '../../../public/filledHeart.svg';
+import emptyHeartIcon from '/emptyHeart.svg';
+import filledHeartIcon from '/filledHeart.svg';
 import Horizon from '@components/common/Line/Horizon';
+import { ProductInfo } from '@type/productList';
 
 interface ProductDetailsProps {
   product: ProductInfo;

@@ -1,6 +1,6 @@
 import selectCropImage from '/image/selelctCrop.png';
-import SelectCard from '@components/Determinepage/SelectCard';
-import UploadImage from '@components/Determinepage/UploadImage';
+import SelectCard from '@components/DeterminePage/SelectCard';
+import UploadImage from '@components/DeterminePage/UploadImage';
 import { Navbar } from '@components/common/Navbar/Navbar';
 import useCropStore from '@store/cropStore';
 

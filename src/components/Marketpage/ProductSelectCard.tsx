@@ -1,4 +1,4 @@
-import { CropButton } from '@components/Determinepage/CropButton';
+import { CropButton } from '@components/DeterminePage/CropButton';
 import marketIcon from '/marketIcon.svg';
 import selectProduct from '/selectProductFirst.svg';
 import { cropData } from '@mocks/mockData';

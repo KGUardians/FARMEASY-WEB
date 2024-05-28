@@ -1,8 +1,8 @@
 import shovelIcon from '/shovel.svg';
 import { useState } from 'react';
 import { experienceData } from '@mocks/mockData';
-import LocationFilter from '@components/Experiencepage/LocationFilter';
-import FarmListSection from '@components/Experiencepage/FarmListSection';
+import LocationFilter from '@components/ExperiencePage/LocationFilter';
+import FarmListSection from '@components/ExperiencePage/FarmListSection';
 import { LocationFilterValue } from '@type/location';
 import { Navbar } from '@components/common/Navbar/Navbar';
 
