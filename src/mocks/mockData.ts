@@ -19,6 +19,13 @@ import tomatoIcon from '/cropIcon/tomato.svg';
 import eggplantIcon from '/cropIcon/eggplant.svg';
 import cucumberIcon from '/cropIcon/cucumber.svg';
 import experienceImage from '/image/experience.png';
+import experienceImage1 from '/image/experience1.png';
+import experienceImage2 from '/image/experience2.png';
+import experienceImage3 from '/image/experience3.png';
+import experienceImage4 from '/image/experience4.png';
+import experienceImage5 from '/image/experience5.png';
+import experienceImage6 from '/image/experience6.png';
+import experienceImage7 from '/image/experience7.png';
 import { BoardSimpleType } from '@type/community';
 import avatar from '/image/userAvatar.png';
 
@@ -52,8 +59,8 @@ export const marketData = [
     type: '바나나',
     price: 12400,
     weight: 750,
-    farmName: '민석농장',
-    place: '경기도 화성시 반월동',
+    farmName: '민하농장',
+    place: '경기도 수원시 영통구',
   },
   {
     id: 3,
@@ -64,8 +71,8 @@ export const marketData = [
     type: '상추',
     price: 12400,
     weight: 750,
-    farmName: '민석농장',
-    place: '경기도 화성시 반월동',
+    farmName: '재호농장',
+    place: '경기도 안산시 상록구',
   },
   {
     id: 4,
@@ -76,8 +83,8 @@ export const marketData = [
     liked: 97,
     price: 12400,
     weight: 750,
-    farmName: '민석농장',
-    place: '경기도 화성시 반월동',
+    farmName: '명균농장',
+    place: '경기도 용인시 처인구',
   },
   {
     id: 5,
@@ -88,8 +95,8 @@ export const marketData = [
     like: true,
     liked: 230,
     weight: 750,
-    farmName: '민석농장',
-    place: '경기도 화성시 반월동',
+    farmName: '민준농장',
+    place: '경기도 고양시 일산동구',
   },
   {
     id: 6,
@@ -100,8 +107,8 @@ export const marketData = [
     like: true,
     liked: 113,
     weight: 750,
-    farmName: '민석농장',
-    place: '경기도 화성시 반월동',
+    farmName: '용진농장',
+    place: '경기도 부천시 원미구',
   },
   {
     id: 7,
@@ -112,8 +119,8 @@ export const marketData = [
     like: true,
     liked: 113,
     weight: 750,
-    farmName: '민석농장',
-    place: '경기도 화성시 반월동',
+    farmName: '성민농장',
+    place: '경기도 성남시 수정구',
   },
 ];
 
@@ -133,95 +140,96 @@ export const cropData = [
 export const experienceData = [
   {
     id: 3,
-    url: strawberry1,
-    like: false,
-    title: '가족과 체험',
+    url: [experienceImage1],
+    like: true,
+    title: '딸기 따기 체험',
     farmName: '민석농장',
     place: '경기도 화성시 반월동',
     date: '5/3일 10:00',
   },
   {
     id: 1,
-    url: banana,
+    url: [experienceImage2],
     like: false,
-    title: '가족과 체험',
-    farmName: '민석농장',
+    title: '바나나 농장 투어',
+    farmName: '민하농장',
     date: '5/3일 10:00',
-    place: '경기도 화성시 반월동',
+    place: '경기도 수원시 영통구',
   },
   {
     id: 2,
-    url: lettuce,
+    url: [experienceImage3],
     like: true,
-    title: '가족과 체험',
-    farmName: '민석농장',
+    title: '상추 심기 체험',
+    farmName: '재호농장',
     date: '5/3일 10:00',
-    place: '경기도 화성시 반월동',
+    place: '경기도 안산시 상록구',
   },
   {
     id: 4,
-    url: sweetPotato,
+    url: [experienceImage4],
     like: false,
-    title: '가족과 체험',
-    farmName: '민석농장',
+    title: '고구마 캐기 체험',
+    farmName: '명균농장',
     date: '5/3일 10:00',
-    place: '경기도 화성시 반월동',
+    place: '경기도 용인시 처인구',
   },
   {
     id: 5,
-    url: banana,
+    url: [experienceImage5],
     like: true,
-    title: '가족과 체험',
-    farmName: '민석농장',
+    title: '감자 수확 체험',
+    farmName: '용진농장',
     date: '5/3일 10:00',
-    place: '경기도 화성시 반월동',
+    place: '경기도 부천시 원미구',
   },
   {
     id: 31,
-    url: strawberry1,
+    url: [experienceImage6],
     like: false,
-    title: '가족과 체험',
-    farmName: '민석농장',
+    title: '사과 따기 체험',
+    farmName: '민준농장',
     date: '5/3일 10:00',
-    place: '경기도 화성시 반월동',
+    place: '경기도 고양시 일산동구',
   },
   {
     id: 12,
-    url: banana,
+    url: [experienceImage7],
     like: false,
-    title: '가족과 체험',
-    farmName: '민석농장',
+    title: '배 수확 체험',
+    farmName: '성민농장',
     date: '5/3일 10:00',
-    place: '경기도 화성시 반월동',
+    place: '경기도 성남시 수정구',
   },
   {
     id: 23,
-    url: lettuce,
+    url: [experienceImage3],
     like: true,
-    title: '가족과 체험',
+    title: '토마토 따기 체험',
     farmName: '민석농장',
     date: '5/3일 10:00',
     place: '경기도 화성시 반월동',
   },
   {
     id: 43,
-    url: sweetPotato,
+    url: [experienceImage2],
     like: false,
-    title: '가족과 체험',
+    title: '배추 심기 체험',
     farmName: '민석농장',
     date: '5/3일 10:00',
     place: '경기도 화성시 반월동',
   },
   {
     id: 53,
-    url: banana,
+    url: [experienceImage4],
     like: false,
-    title: '가족과 체험',
+    title: '옥수수 수확 체험',
     farmName: '민석농장',
     date: '5/3일 10:00',
     place: '경기도 화성시 반월동',
   },
 ];
+
 
 export const locationData = {
   대한민국: {

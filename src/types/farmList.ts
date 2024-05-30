@@ -1,6 +1,6 @@
 export interface ExperienceInfo {
   id: number;
-  url: string;
+  url: string[];
   like: boolean;
   title: string;
   farmName: string;

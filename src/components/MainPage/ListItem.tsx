@@ -8,7 +8,7 @@ interface ListItemProps {
   to: string;
   image: string[];
   like: boolean;
-  type: string;
+  type?: string;
   price?: number;
   weight?: number;
   farmName: string;
@@ -38,7 +38,7 @@ const ListItem = ({
         className="rounded-md min-w-[100px] h-[100px] object-cover"
       />
       <div className="flex justify-between mt-1">
-        <p className="text-xs">{type}</p>
+        <p className="text-xs font-semibold">{type}</p>
         {like ? (
           <img src={filledHeartIcon} alt="like" />
         ) : (
@@ -46,7 +46,7 @@ const ListItem = ({
         )}
       </div>
       {price && weight && (
-        <p className="font-semibold">
+        <p className="font-medium">
           {commaizeNumber(price)}원 / {weight}g
         </p>
       )}
