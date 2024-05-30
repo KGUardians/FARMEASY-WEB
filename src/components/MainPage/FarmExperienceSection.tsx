@@ -1,4 +1,4 @@
-import { marketData } from '@mocks/mockData';
+import { experienceData } from '@mocks/mockData';
 import { TitleBar } from '@components/common/TitleBar/TitleBar';
 import ListItem from './ListItem';
 
@@ -8,13 +8,13 @@ export const FarmExperienceSection = () => {
       <TitleBar title="농촌 체험" to="/experiencelist" />
 
       <div className="flex w-full gap-2 overflow-x-auto scrollbar-hide">
-        {marketData.map((item) => (
+        {experienceData.map((item) => (
           <ListItem
             id={item.id}
             to="experience"
             image={item.url}
             like={false}
-            type={item.type}
+            type={item.title}
             farmName={item.farmName}
             place={item.place}
           />

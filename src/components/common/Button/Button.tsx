@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import classNames from 'classnames';
 import { ButtonColorType } from './Button.type';
 import { buttonColors } from './Button.style';

@@ -3,7 +3,7 @@ import filledHeart from '/filledHeart.svg';
 import { Link } from 'react-router-dom';
 
 interface FarmCardProps {
-  url: string;
+  url: string[];
   farmName: string;
   location: string;
   like: boolean | undefined;
@@ -25,7 +25,7 @@ const FarmCard = ({
       className="flex flex-col gap-2 w-full h-[220px] p-4 rounded-lg bg-gray-100"
     >
       <img
-        src={url}
+        src={url[0]}
         alt="image"
         className="w-full h-[83px] rounded-xl object-cover"
       />
