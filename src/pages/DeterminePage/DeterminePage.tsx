@@ -1,4 +1,4 @@
-import selectCropImage from '/image/selelctCrop.png';
+import selectCropImage from '/image/selectCrop.png';
 import SelectCard from '@components/DeterminePage/SelectCard';
 import UploadImage from '@components/DeterminePage/UploadImage';
 import { Navbar } from '@components/common/Navbar/Navbar';
