@@ -1,6 +1,7 @@
 import Button from '@components/common/Button/Button';
 import cancelIcon from '/cancelIcon.svg';
 import modifyImage from '/modifyImage.svg';
+import { useNavigate } from 'react-router-dom';
 
 interface SelectedImageProps {
   selected: Blob | MediaSource;
@@ -17,6 +18,8 @@ const SelectedImage = ({
   onDetermineClick,
   onImageUpload,
 }: SelectedImageProps) => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col gap-5">
       <div className="flex border-[1px] p-10 border-dashed rounded-md border-[#D9D9D9]">
@@ -50,14 +53,27 @@ const SelectedImage = ({
               onClick={onModifyClick}
             />
           </label>
-          <p className="text-center">사진 수정하기</p>
+          <p className="text-center mt-1">사진 수정하기</p>
         </div>
       </div>
 
-      <div className="flex items-center justify-center">
-        <Button onClick={onDetermineClick} className="w-[340px]">
-          판별하기
-        </Button>
+      <div className="flex items-center justify-center px-5">
+        <div className="w-full h-12 bg-fp-green rounded-lg flex">
+          <button
+            className="w-1/3 h-full"
+            onClick={() => navigate('/abnormal')}
+          ></button>
+          <button
+            className="w-1/3 h-full text-white text-lg font-semibold"
+            onClick={() => navigate('/unknown')}
+          >
+            판별하기
+          </button>
+          <button
+            className="w-1/3 h-full"
+            onClick={() => navigate('/normal')}
+          ></button>
+        </div>
       </div>
     </div>
   );
