@@ -1,9 +1,28 @@
 import Button from '@components/common/Button/Button';
 import successIcon from '/successIcon.svg';
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Spinner } from '@material-tailwind/react';
 
 const NormalPage = () => {
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // 3초 후에 로딩 상태를 false로 변경
+
+    return () => clearTimeout(timer); // 컴포넌트 언마운트 시 타이머 클리어
+  }, []);
+
+  if (isLoading) {
+    return (
+      <section className="flex flex-col items-center justify-center h-screen">
+        <Spinner />
+      </section>
+    );
+  }
 
   return (
     <section className="flex flex-col items-center justify-center h-screen">
