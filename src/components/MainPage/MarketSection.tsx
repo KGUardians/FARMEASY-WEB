@@ -5,7 +5,7 @@ import ListItem from './ListItem';
 export const MarketSection = () => {
   return (
     <>
-      <TitleBar title="농산물 거래" to="/" />
+      <TitleBar title="농산물 거래" to="/market" />
 
       <div className="flex w-full gap-2 overflow-x-auto scrollbar-hide">
         {marketData.map((item) => (
