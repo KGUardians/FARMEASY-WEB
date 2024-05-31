@@ -15,6 +15,7 @@ import CommunityPostPage from '@pages/CommunityPage/CommunityPostPage';
 import AbnormalPage from '@pages/DeterminePage/AbnormalPage';
 import NormalPage from '@pages/DeterminePage/NormalPage';
 import UnknownPage from '@pages/DeterminePage/UnknownPage';
+import SignInPage from '@pages/SignInPage/SignInPage';
 
 const Router = () => (
   <RouterProvider
@@ -34,6 +35,7 @@ const Router = () => (
           { path: '/signup', element: <SignUpPage /> },
           { path: '/community/:id', element: <CommunityInfoPage /> },
           { path: '/communitypost', element: <CommunityPostPage /> },
+          { path: '/signin', element: <SignInPage /> },
 
           // 임시 결과창 제작
           { path: '/abnormal', element: <AbnormalPage /> },
