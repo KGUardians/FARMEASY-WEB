@@ -17,7 +17,7 @@ export const Navbar = () => {
         onClick={() => navigate('/')}
       />
       <div className="flex items-center gap-2">
-        <button className="text-sm" onClick={() => navigate('/')}>
+        <button className="text-sm" onClick={() => navigate('/signin')}>
           로그인
         </button>
         <IoMenuOutline
