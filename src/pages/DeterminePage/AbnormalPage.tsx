@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Button from '@components/common/Button/Button';
 import failIcon from '/failIcon.svg';
 import { useNavigate } from 'react-router-dom';
-import { Spinner } from '@material-tailwind/react';
+import Spinnner from '/spinner.svg';
 
 const AbnormalPage = () => {
   const navigate = useNavigate();
@@ -18,8 +18,9 @@ const AbnormalPage = () => {
 
   if (isLoading) {
     return (
-      <section className="flex flex-col items-center justify-center h-screen">
-        <Spinner />
+      <section className="flex flex-col items-center justify-center h-screen space-y-3">
+        <img src={Spinnner} alt="Loading spinner" className="animate-spin-slow" />
+        <p>인식 중 입니다...</p>
       </section>
     );
   }
