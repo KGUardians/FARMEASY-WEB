@@ -9,7 +9,7 @@ import * as dayjs from 'dayjs';
 import { API_BASE_URL } from '@constants/environment';
 import { parseJwtPayload } from './utils';
 
-const server = axios.create({
+export const server = axios.create({
   baseURL: API_BASE_URL,
 });
 
@@ -101,4 +101,9 @@ server.interceptors.request.use(async (config) => {
   }
 });
 
-export default server;
+const get = async (url: string) => {
+  const res = await server.get(url);
+  return res?.data?.data;
+};
+
+export default get;
