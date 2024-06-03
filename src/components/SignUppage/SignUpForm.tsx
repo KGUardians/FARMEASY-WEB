@@ -4,23 +4,43 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import Button from '@components/common/Button/Button';
 import Input from '@components/common/Input/Input';
 import ErrorMessage from '@components/common/ErrorMessage/ErrorMessage';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 interface FormInput {
+  id: string;
+  password: string;
+  checkPassword: string;
   username: string;
   birthday: string;
   phoneNumber: string;
-  id: string;
-  email: string;
-  password: string;
-  confirmPassword: string;
 }
+
+const formSchema = z.object({
+  username: z.string().min(1, '이름을 입력해주세요.'),
+  birthday: z
+    .string()
+    .regex(/^\d+$/, '숫자만 입력해주세요.(ex:20000510)')
+    .transform(Number),
+  phoneNumber: z.string().regex(/^\d+$/, "'-'를 제외한 숫자만 입력해주세요."),
+  id: z
+    .string()
+    .min(4, '아이디는 4~12자이어야 합니다.')
+    .max(12, '아이디는 4~12자이어야 합니다.'),
+  password: z
+    .string()
+    .min(8, '8자 이상, 영문, 숫자, 특수문자(@$!%*#?&)를 사용하세요 .'),
+  checkPassword: z.string().min(8, '비밀번호가 일치하지 않습니다.'),
+});
 
 const SignUpForm: React.FC = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormInput>();
+  } = useForm<FormInput>({
+    resolver: zodResolver(formSchema),
+  });
 
   const onSubmit: SubmitHandler<FormInput> = (data) => {
     console.log(data);
@@ -80,10 +100,10 @@ const SignUpForm: React.FC = () => {
           <Input
             label="비밀번호 확인"
             placeholder="비밀번호를 입력하세요."
-            {...register('confirmPassword')}
+            {...register('checkPassword')}
           />
-          {errors.confirmPassword && (
-            <ErrorMessage text={errors.confirmPassword.message} />
+          {errors.checkPassword && (
+            <ErrorMessage text={errors.checkPassword.message} />
           )}
         </div>
       </form>
