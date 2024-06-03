@@ -1,4 +1,5 @@
 import axios, {
+  AxiosError,
   AxiosRequestHeaders,
   AxiosResponse,
   InternalAxiosRequestConfig,
@@ -16,7 +17,7 @@ server.interceptors.response.use(
   (response: AxiosResponse) => {
     return response;
   },
-  (error: any) => {
+  (error: AxiosError) => {
     return Promise.reject(error.response);
   },
 );
