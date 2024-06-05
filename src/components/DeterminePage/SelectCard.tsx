@@ -1,8 +1,8 @@
 import selectCropImage from '/selectCropFirst.svg';
 import searchIcon from '/searchIcon.svg';
-import { cropData } from '@mocks/mockData';
 import useCropStore from '@store/cropStore';
-import { CropButton } from './CropButton';
+import { CropButton } from '../common/Button/CropButton';
+import { CROP_LIST } from '@constants/CROP_LIST';
 
 const SelectCard = () => {
   const selectedCrop = useCropStore((state) => state.selectedCrop);
@@ -19,8 +19,8 @@ const SelectCard = () => {
         )}
       </div>
       <div className="grid w-full grid-cols-5 my-4">
-        {cropData.map((item) => (
-          <CropButton key={item.id} item={item} />
+        {CROP_LIST.map((item) => (
+          <CropButton key={item.value} item={item} />
         ))}
       </div>
     </>
