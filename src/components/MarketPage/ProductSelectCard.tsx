@@ -1,7 +1,7 @@
-import { CropButton } from '@components/DeterminePage/CropButton';
+import { CropButton } from '@components/common/Button/CropButton';
 import marketIcon from '/marketIcon.svg';
 import selectProduct from '/selectProductFirst.svg';
-import { cropData } from '@mocks/mockData';
+import { CROP_LIST } from '@constants/CROP_LIST'; 
 
 const ProductSelectCard = () => {
   return (
@@ -13,8 +13,8 @@ const ProductSelectCard = () => {
       </div>
 
       <div className="grid w-full grid-cols-5 my-4">
-        {cropData.map((item) => (
-          <CropButton key={item.id} item={item} />
+        {CROP_LIST.map((item) => (
+          <CropButton key={item.value} item={item} />
         ))}
       </div>
     </>

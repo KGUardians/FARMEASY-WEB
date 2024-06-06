@@ -1,5 +1,4 @@
 import { ProductInfo } from '@type/productList';
-import useCropStore from '@store/cropStore';
 import ProductCard from './ProductCard';
 
 interface ProductListProps {
@@ -7,26 +6,20 @@ interface ProductListProps {
 }
 
 const ProductListSection = ({ productList }: ProductListProps) => {
-  const selectedCrop = useCropStore((state) => state.selectedCrop);
-  const filteredProductList = selectedCrop
-    ? productList.filter((product) => product.cropId === selectedCrop)
-    : productList;
-
   return (
     <div className="mt-[-16px] px-2">
-      {filteredProductList.length > 0 ? (
-        filteredProductList.map((item) => (
+      {productList.length > 0 ? (
+        productList.map((item) => (
           <ProductCard
-            id={item.id}
-            key={item.id}
-            url={item.url}
-            like={item.like}
-            liked={item.liked}
-            type={item.type}
+            id={item.postId}
+            key={item.postId}
+            url={[item.image.uniqueName]}
+            liked={item.postLike}
+            type={item.cropCategory}
             price={item.price}
-            weight={item.weight}
+            weight={item.gram}
             farmName={item.farmName}
-            place={item.place}
+            place={item.sigungu}
           />
         ))
       ) : (

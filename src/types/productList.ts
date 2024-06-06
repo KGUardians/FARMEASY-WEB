@@ -1,12 +1,17 @@
-export interface ProductInfo {
+export interface Image {
   id: number;
-  cropId: number;
-  url: string[];
-  like?: boolean;
-  liked: number;
-  type: string;
-  price: number;
-  weight: number;
+  postId: number;
+  originName: string;
+  uniqueName: string;
+}
+
+export interface ProductInfo {
+  postId: number;
+  postLike: number;
+  cropCategory: string;
+  image: Image;
+  sigungu: string;
   farmName: string;
-  place: string;
+  price: number;
+  gram: number;
 }
