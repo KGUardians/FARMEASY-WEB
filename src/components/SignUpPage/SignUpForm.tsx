@@ -1,6 +1,7 @@
-// src/SignUpForm.tsx
-import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { SignUpSchema } from '@/schema/SignUp';
+
 import Button from '@components/common/Button/Button';
 import Input from '@components/common/Input/Input';
 import ErrorMessage from '@components/common/ErrorMessage/ErrorMessage';
@@ -12,7 +13,7 @@ interface FormInput {
   id: string;
   email: string;
   password: string;
-  confirmPassword: string;
+  checkPassword: string;
 }
 
 const SignUpForm: React.FC = () => {
@@ -20,15 +21,17 @@ const SignUpForm: React.FC = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormInput>();
+  } = useForm<FormInput>({
+    resolver: zodResolver(SignUpSchema),
+  });
 
   const onSubmit: SubmitHandler<FormInput> = (data) => {
     console.log(data);
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit(onSubmit)} className="mb-10 p-8 space-y-8">
+    <div className="p-8">
+      <form onSubmit={handleSubmit(onSubmit)} className="mb-10 space-y-8">
         <div>
           <Input
             label="이름"
@@ -80,17 +83,17 @@ const SignUpForm: React.FC = () => {
           <Input
             label="비밀번호 확인"
             placeholder="비밀번호를 입력하세요."
-            {...register('confirmPassword')}
+            {...register('checkPassword')}
           />
-          {errors.confirmPassword && (
-            <ErrorMessage text={errors.confirmPassword.message} />
+          {errors.checkPassword && (
+            <ErrorMessage text={errors.checkPassword.message} />
           )}
         </div>
-      </form>
 
-      <Button className="w-full hover:bg-blue-500" type="submit">
-        회원가입
-      </Button>
+        <Button className="w-full hover:bg-lime-200 ease-in" type="submit">
+          회원가입
+        </Button>
+      </form>
     </div>
   );
 };
