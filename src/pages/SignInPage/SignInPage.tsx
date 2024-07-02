@@ -41,16 +41,18 @@ const SignInPage = () => {
       <div className="flex flex-col place-self-center justify-center">
         <img src={logo} alt="farmpal" className="w-[60%] mx-auto my-10" />
 
-        <form className="flex flex-col gap-3" onSubmit={handleSubmit(onSubmit)}>
+        <form className="flex flex-col gap-5" onSubmit={handleSubmit(onSubmit)}>
           <Input placeholder="아이디" {...register('id')} />
           <Input placeholder="비밀번호" {...register('password')} />
 
-          <Button type="submit">로그인하기</Button>
+          <Button type="submit" className="mt-14">
+            로그인하기
+          </Button>
         </form>
       </div>
 
       <Link to="/signup">
-        <p className="text-sm text-gray-300 text-center mt-2">
+        <p className="text-xs text-gray-300 text-center mt-2">
           아직 회원이 아니신가요?
         </p>
       </Link>
